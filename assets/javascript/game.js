@@ -75,18 +75,7 @@ document.onkeyup = function (event) {
         console.log("" + guessleft);
 
     }
-// calling function for rolling word
-function animateString(id){
-    const headText = document.getElementById(id)
-    const headNode = headText.childNodes[0];
-    let text = headNode.data;
 
-    setInterval(function(){
-        text = text[text.length-1] + text.substring(0,text.length-1)
-        headNode . data = text
-        
-    },100);
-}
 
 };
 
